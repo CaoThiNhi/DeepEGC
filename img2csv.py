@@ -9,7 +9,7 @@ import os
 PATH = sys.argv[1]
 output_folder = os.path.dirname(PATH)
 output_filename = os.path.splitext(os.path.basename(PATH))[0]
-output_path = output_folder + "/" + output_filename + "-from-user.csv"
+output_path = output_folder + "/" + output_filename + ".csv"
 img = cv2.imread(PATH)
 img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 

@@ -1,0 +1,4 @@
+testm 1 300 251
+testm.mat 16+192 1000/mV 16 0 1 34 8 col 1
+#Creator: wfdb2mat
+#Source: record raw/test

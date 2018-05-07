@@ -14,7 +14,7 @@ sys.stderr = stderr
 
 # signal_path = "/Users/truongnm/coding/cnn/DeepECG/raw/A00001.mat"
 signal_path = sys.argv[1]
-MODEL_PATH = "/Users/truongnm/coding/cnn/DeepECG/dirichlet_model"
+MODEL_PATH = "/Users/macbook/Desktop/MLEGC/dirichlet_model"
 BATCH_SIZE = 100
 
 gpu_options = tf.GPUOptions(per_process_gpu_memory_fraction=0.5, allow_growth=True)

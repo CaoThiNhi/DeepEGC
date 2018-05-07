@@ -19,6 +19,6 @@ OUTPUT_DIR=$(dirname "${FILE_PATH}")
 # echo "OUTPUT_DIR: ${OUTPUT_DIR}"
 
 python img2csv.py ${FILE_PATH}
-wrsamp -i raw/${FILE_NAME_WITHOUT_EXT}-from-user.csv -o raw/${FILE_NAME_WITHOUT_EXT}-from-user -G 1000 -F 300 -z
-wfdb2mat -r raw/${FILE_NAME_WITHOUT_EXT}-from-user > /dev/null
-python predict.py "${FILE_NAME_WITHOUT_EXT}-from-userm.mat"
+wrsamp -i raw/${FILE_NAME_WITHOUT_EXT}.csv -o raw/${FILE_NAME_WITHOUT_EXT} -G 1000 -F 300 -z
+wfdb2mat -r raw/${FILE_NAME_WITHOUT_EXT} > /dev/null
+python predict.py "${FILE_NAME_WITHOUT_EXT}m.mat"
